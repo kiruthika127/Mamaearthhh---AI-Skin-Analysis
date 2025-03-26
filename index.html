@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamaearthhh - Skin Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mamaearthhh - AI Skin Analysis</h1>
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+    </header>
+    
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Enter email" required>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="product-section">
+        <h2>Our Skincare Products</h2>
+        <div class="product-grid">
+            <div class="product">Tea Tree Face Wash</div>
+            <div class="product">Hydrating Moisturizer</div>
+            <div class="product">Soothing Aloe Vera Gel</div>
+            <div class="product">Vitamin C Serum</div>
+            <div class="product">Spot Reduction Cream</div>
+            <div class="product">Under Eye Gel</div>
+            <div class="product">Sunscreen SPF 50</div>
+            <div class="product">Charcoal Face Mask</div>
+            <div class="product">Rose Water Toner</div>
+            <div class="product">Ubtan Face Scrub</div>
+        </div>
+    </section>
+
+    <section id="skin-analysis" style="display:none;">
+        <h2>Analyze Your Skin</h2>
+        <div class="container">
+            <video id="video" autoplay></video>
+            <canvas id="canvas"></canvas>
+            <button id="analyzeBtn">Analyze Skin</button>
+            <p id="result">Skin analysis results will appear here.</p>
+        </div>
+    </section>
+</body>
+</html>
